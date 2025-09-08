@@ -61,6 +61,7 @@ DEFAULT_RULES = {
         {"parent_xpath":"//attributealiases","child_xpath":"alias","key_xpath":"@field"},
         {"parent_xpath":"//constraints","child_xpath":"constraint","key_xpath":"@field"},
         {"parent_xpath":"//excludedAttributes","child_xpath":"attribute","key_xpath":"text()"},
+        {"parent_xpath":"//individual-layer-settings","child_xpath":"layer-setting","key_xpath":"@id"},
         # You can add renderer sorting in a config file if appropriate for your styles:
         # {"parent_xpath":"//renderer-v2/categorizedSymbol","child_xpath":"category","key_xpath":"@label"},
         # {"parent_xpath":"//renderer-v2/graduatedSymbol","child_xpath":"range","key_xpath":"@label"},
