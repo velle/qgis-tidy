@@ -51,7 +51,7 @@ except Exception as e:
 
 DEFAULT_RULES = {
     "strip_attributes": [
-        "expanded", "selected", "lastSaved", "timestamp", "uuid", "lastOpened"
+        "expanded", "checked", "saveDateTime",
     ],
     "sort_rules": [
         {"parent_xpath":"//customproperties","child_xpath":"property","key_xpath":"@key"},
