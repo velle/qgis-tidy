@@ -3,7 +3,7 @@
 set -eu
 
 case "${QGIS_TEXTCONV-}" in
-    STRICT)  exec qgis-tidy "$@" ;;
-    LAX) exec qgis-tidy --lax "$@" ;;
-    *)       exit 0 ;;  # no conversion → Git shows "Binary files differ"
+    STRICT)     exec qgis-tidy -o - "$@" ;;
+    LAX)        exec qgis-tidy -o - --lax "$@" ;;
+    *)          exit 0 ;;  # no conversion → Git shows "Binary files differ"
 esac

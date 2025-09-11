@@ -26,8 +26,8 @@ git diff masterprj.qgz                        # shows "Binary files differ"
 Add to .bashrc
 
 ```bash
-alias qd=QGIS_TEXTCONV=STRICT git diff
-alias qdlax=QGIS_TEXTCONV=LAX git diff
+alias qd="QGIS_TEXTCONV=STRICT git diff"
+alias qdlax="QGIS_TEXTCONV=LAX git diff"
 ```
 
 ### Usage with aliases
