@@ -16,9 +16,9 @@
 ### Usage
 
 ```bash
-QGIS_TEXTCONV=STRICT git diff project.qgz   # shows normalized strict diff
-QGIS_TEXTCONV=RELAXED git diff project.qgz  # shows relaxed diff
-git diff project.qgz                        # shows "Binary files differ"
+QGIS_TEXTCONV=STRICT git diff masterprj.qgz   # shows normalized strict diff
+QGIS_TEXTCONV=RELAXED git diff masterprj.qgz  # shows relaxed diff
+git diff masterprj.qgz                        # shows "Binary files differ"
 ```
 
 ### Aliases
@@ -33,9 +33,9 @@ alias qdlax=QGIS_TEXTCONV=LAX git diff
 ### Usage with aliases
 
 ```bash
-qd project.qgz          # shows normalized strict diff
-qdlax project.qgz       # shows relaxed diff
-git diff project.qgz
+qd masterprj.qgz          # shows normalized strict diff
+qdlax masterprj.qgz       # shows relaxed diff
+git diff masterprj.qgz
 ```
 
 ### Pre-commit
